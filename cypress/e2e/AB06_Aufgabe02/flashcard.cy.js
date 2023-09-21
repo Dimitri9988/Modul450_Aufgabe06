@@ -2,7 +2,7 @@ describe('Testsuite', () => {
     beforeEach(() => {
         cy.visit('http://localhost:9000')
     });
-    it ('Crate Card', () => {
+    it ('Create Card', () => {
         cy.get('input[id=frageInput]').type("Frage")
         cy.get('input[id=antwortInput]').type("Antwort")
         cy.get('button[id=addButton]').click()
